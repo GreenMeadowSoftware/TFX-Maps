@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TFX-Maps</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="menu">
+        <map name="Menu">
+            <area coords="20, 18, 96, 32" shape="rect" href="/" alt="News / Main">
+            <area coords="20, 42, 104, 56" shape="rect" href="/Reviews" alt="Reviews">
+            <area coords="20, 68, 106, 81" shape="rect" href="/Reviews/Top10" alt="Top 10">
+            <area coords="20, 174, 82, 188" shape="rect" href="/Tutorials" alt="Tutorials">
+            <!--<area coords="20, 197, 59, 211" shape="rect" href="/Forum" alt="Forum">-->
+            <area coords="20, 219, 52, 235" shape="rect" href="/Links" alt="Links">
+            <area coords="20, 240, 75, 255" shape="rect" href="/Contact" alt="Contact">
+            <area coords="20, 261, 93, 288" shape="rect" href="/About" alt="About">
+            <area coords="20, 297, 80, 312" shape="rect" href="http://www.tfxsoft.com/" alt="TFX-Soft">
+        </map>
+        <img src="/Images/menu.gif" usemap="#Menu" border="0">
+    </div>
+    <div>
+        <h2>@ViewBag.Title</h2>
+        @RenderBody()
+    </div>
+    <footer>
+        <p style="margin-top: 50px; text-align: center;">&copy; 2000-@DateTime.Now.Year TFX-Soft, all rights reserved</p>
+    </footer>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

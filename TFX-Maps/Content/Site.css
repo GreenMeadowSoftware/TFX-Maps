@@ -1,0 +1,230 @@
+﻿body {
+    margin: 10px 10px 10px 150px;
+    background-image: url("/Images/bg.jpg");
+    background-attachment: fixed;
+    background-color: #000000;
+    color: #EFB539;
+}
+
+body, table {
+    font-family: Tahoma, sans-serif;
+    font-size: 10pt;
+    font-weight: bold
+}
+
+#menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 124px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+#main {
+    margin-top: 100px;
+    margin-left: 130px;
+}
+
+#header {
+    margin-bottom: 0px !important;
+}
+
+#scores {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#review {
+    margin-top: 0px;
+    border: 0px;
+    clear: both;
+}
+
+    #review #pics {
+        float: right;
+        width: 100px;
+        margin: 0px 0px 0px 10px;
+    }
+
+img {
+    border-width: 0px;
+}
+
+a {
+    color: #FFFF6F;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+    a:link, a:visited {
+        text-decoration: none
+    }
+
+    a:active, a:hover {
+        text-decoration: underline
+    }
+
+acronym:hover, abbrev:hover {
+    cursor: help;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.blockquote {
+    padding-left: 35px;
+}
+
+p.quote {
+    border-top: groove 2px #FFFFFF;
+    border-bottom: groove 2px #FFFFFF;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px 10px 10px 10px;
+}
+
+p.footer {
+    text-align: center;
+    font-size: 7pt;
+    width: 100%;
+}
+
+span.small {
+    font-size: 7pt;
+}
+
+span.nobold {
+    font-weight: normal;
+}
+
+span.u {
+    text-decoration: underline;
+}
+
+span.code {
+    font-family: Courier, Fixedsys, serif;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFF6F;
+    background-color: transparent;
+    font-size: 18pt;
+    letter-spacing: -1px;
+    font-family: Century Gothic, Verdana, Tahoma, Arial, sans-serif;
+}
+
+h2 {
+    color: #B0B578;
+    background-color: transparent;
+    font-size: 16pt;
+    letter-spacing: 0px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+h3 {
+    color: #C5BE86;
+    background-color: transparent;
+    font-size: 14pt;
+    letter-spacing: -1px;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    background-color: transparent;
+    color: #EFB539;
+    border: solid 1px #B0B578;
+    font-weight: normal;
+}
+
+select {
+    background-color: #000000;
+    color: #EFB539;
+    border: solid 1px #B0B578;
+    font-weight: normal;
+}
+
+textarea {
+    background-color: transparent;
+    color: #EFB539;
+    border: solid 1px #B0B578;
+    font-weight: normal;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.read {
+    border-top: solid 1px #B0B578;
+}
+
+td.new {
+    border-top: solid 1px #B0B578;
+    color: #EFB539;
+    background-color: #000000;
+}
+
+td.read1 {
+    border-top: none;
+}
+
+td.new1 {
+    border-top: none;
+    color: #EFB539;
+    background-color: #000000;
+}
+
+table.forum-thread {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+table.forum-thread1 {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+td.forum-thread-left1 {
+    width: 100px;
+    vertical-align: top;
+    padding: 2px 2px 2px 2px;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+td.forum-thread-right1 {
+    padding: 2px 2px 2px 2px;
+    vertical-align: top;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    background-color: transparent;
+}
+
+td.forum-thread-left {
+    width: 100px;
+    vertical-align: top;
+    padding: 2px 2px 2px 2px;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #EFB539;
+    background-color: #000000;
+}
+
+td.forum-thread-right {
+    padding: 2px 2px 2px 2px;
+    vertical-align: top;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #EFB539;
+    background-color: #000000;
+}
