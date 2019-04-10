@@ -1,6 +1,65 @@
 ﻿@{
     ViewBag.Title = "Top 10";
 }
-<p>
-
-</p>
+@for (int i = 0; i < ViewBag.Reviews.Length; i++)
+{
+    TFX_Maps.Models.ReviewModel review = ViewBag.Reviews[i];
+    <p>
+        <font face="Fixedsys">&nbsp;&nbsp;&nbsp;-=<font size="+1">@(i + 1)</font>=-</font>
+        <br>
+        <a href="/Reviews/View/@review.Id">
+            @review.Name
+        </a>
+        by
+        <a href="mailto:@(review.AuthorEmail)?subject=samurai">@review.Author</a>
+        <br>
+        Reviewed by @review.Reviewer on @review.ReviewDate.ToShortDateString()
+        <br>
+        Download:
+        <a href="@review.DownloadUrl">@review.Name</a>
+        <br>
+        Total score: @review.Score%
+        <br>
+        User Rating:
+        @if (@review.UserRating >= 0.5)
+        {
+            <img src="~/Images/star_left.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 1)
+        {
+            <img src="~/Images/star_right.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 1.5)
+        {
+            <img src="~/Images/star_left.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 2)
+        {
+            <img src="~/Images/star_right.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 2.5)
+        {
+            <img src="~/Images/star_left.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 3)
+        {
+            <img src="~/Images/star_right.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 3.5)
+        {
+            <img src="~/Images/star_left.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 4)
+        {
+            <img src="~/Images/star_right.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 4.5)
+        {
+            <img src="~/Images/star_left.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+        @if (@review.UserRating >= 5)
+        {
+            <img src="~/Images/star_right.gif" alt="@review.UserRating - @review.UserVotes votes">
+        }
+    </p>
+}
